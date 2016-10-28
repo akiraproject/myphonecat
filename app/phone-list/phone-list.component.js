@@ -7,11 +7,8 @@ angular
   .module('phoneList')
   .component('phoneList',{
     templateUrl: 'phone-list/phone-list.template.html',
-      controller: PhoneListController
+    controller: PhoneListController
   });
-
-
-
 
   function PhoneListController(){
     var vm=this;

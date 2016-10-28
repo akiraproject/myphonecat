@@ -1,12 +1,10 @@
 describe('phoneList', function(){
   beforeEach(module('phoneList'));
   describe('PhoneListController', function() {
-    it('should create a `phones` model with 3 phones', inject(function($controller) {
-      var scope = {};
-      var ctrl = $controller('PhoneListController as PhoneCtrl', {$scope: scope});
-
-      expect(scope.PhoneCtrl.phones.length).toBe(3);
-      expect(scope.PhoneCtrl.name).toBe('World');
+    it('should create a `phones` model with 3 phones', inject(function($componentController) {
+      var ctrl = $componentController('phoneList');
+      expect(ctrl.phones.length).toBe(3);
+      expect(ctrl.name).toBe('World');
     }));
   });
 });

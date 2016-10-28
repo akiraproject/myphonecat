@@ -1,6 +1,6 @@
 describe('PhoneListController', function() {
 
-  beforeEach(module('myPhoneCatApp'));
+  beforeEach(module('phoneList'));
 
   it('should create a `phones` model with 3 phones', inject(function($controller) {
     var scope = {};

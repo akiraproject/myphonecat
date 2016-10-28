@@ -3,7 +3,7 @@
 
 // Defining phonelistcontroller:
 angular
-  .module('myPhoneCatApp')
+  .module('phoneList')
   .controller('PhoneListController',PhoneListController);
 
   function PhoneListController(){
